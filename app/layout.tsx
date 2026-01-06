@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import './globals.css';
+
+import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
-import "./globals.css";
 
 const nunito = Nunito({
   subsets: ['cyrillic'],
@@ -9,7 +10,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "San Pizza",
+  title: 'San Pizza',
 };
 
 export default function RootLayout({
@@ -20,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.variable}>
-        <main className='min-h-screen'>
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );
