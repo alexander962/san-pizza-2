@@ -1,3 +1,9 @@
+import { Header } from '@/components/shared/header';
+
 export default function Home() {
-  return <h1>Главная</h1>;
+  return (
+    <div>
+      <Header></Header>
+    </div>
+  );
 }
