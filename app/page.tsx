@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Header } from '@/components/shared/header';
 
 export default function Home() {
   return (
-    <h1>
-      Hello!!!
-      <Button variant={"outline"}>Корзина</Button>
-    </h1>
+    <div>
+      <Header></Header>
+    </div>
   );
 }
