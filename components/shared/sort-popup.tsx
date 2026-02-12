@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { ArrowDown } from 'lucide-react';
+import { ArrowUpDown } from 'lucide-react';
 
 interface Props {
   className?: string;
@@ -14,7 +14,9 @@ export const SortPopup: FC<Props> = ({ className }) => {
         className,
       )}
     >
-      <ArrowDown size={16} />
+      <ArrowUpDown size={16} />
+      <b>Сортировка:</b>
+      <b className="text-primary">популярное</b>
     </div>
   );
 };
