@@ -10,7 +10,7 @@ export default function Home() {
       </Container>
       <TopBar />
       <Container className="mt-10 pb-14">
-        <div className="flex gap-[60px]">
+        <div className="flex gap-[80px]">
           {/*Фильтрация*/}
           <div className="w-[250px]">
             <Filters />
@@ -19,14 +19,9 @@ export default function Home() {
           {/*Списко товаров*/}
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              {/*<ProductCard*/}
-              {/*  id={1}*/}
-              {/*  name="Чизбургер-пицца"*/}
-              {/*  price={550}*/}
-              {/*  imageUrl="https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif"*/}
-              {/*/>*/}
               <ProductsGroupList
                 title="Пиццы"
+                categoryId={1}
                 items={[
                   {
                     id: 1,
@@ -37,7 +32,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 2,
                     name: 'Чизбургер-пицца',
                     price: 550,
                     imageUrl:
@@ -45,7 +40,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 3,
                     name: 'Чизбургер-пицца',
                     price: 550,
                     imageUrl:
@@ -53,7 +48,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 4,
                     name: 'Чизбургер-пицца',
                     price: 550,
                     imageUrl:
@@ -61,7 +56,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 5,
                     name: 'Чизбургер-пицца',
                     price: 550,
                     imageUrl:
@@ -69,7 +64,52 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                 ]}
-                categoryId={1}
+              />
+              <ProductsGroupList
+                title="Завтрак"
+                categoryId={2}
+                items={[
+                  {
+                    id: 6,
+                    name: 'Чизбургер-пицца',
+                    price: 550,
+                    imageUrl:
+                      'https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 7,
+                    name: 'Чизбургер-пицца',
+                    price: 550,
+                    imageUrl:
+                      'https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 8,
+                    name: 'Чизбургер-пицца',
+                    price: 550,
+                    imageUrl:
+                      'https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 9,
+                    name: 'Чизбургер-пицца',
+                    price: 550,
+                    imageUrl:
+                      'https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif',
+                    items: [{ price: 550 }],
+                  },
+                  {
+                    id: 10,
+                    name: 'Чизбургер-пицца',
+                    price: 550,
+                    imageUrl:
+                      'https://media.dodostatic.net/image/r:292x292/019a109fe01672189d029a725ba99705.avif',
+                    items: [{ price: 550 }],
+                  },
+                ]}
               />
             </div>
           </div>
